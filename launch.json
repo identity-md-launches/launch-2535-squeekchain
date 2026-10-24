@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "Squeekchain",
+    "name": "squeekchain",
+    "symbol": "SQK",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 4000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x3ed212257958724579f13b3dba74a07ac6007903"
+  },
+  "notes": "Squeekchain is an ERC-20 named squeekchain (SQK) with 18 decimals. Its argument-free constructor mints the entire fixed supply of 1,000,000,000 SQK to msg.sender, the launch factory. It has no administrative functions, externally callable mint or burn functions, or transfer fees. No application contracts are deployed. pool.initialPrice records provenance only; the deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply."
+}
